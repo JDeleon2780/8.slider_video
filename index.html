@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jeremy</title>
+    <link rel="stylesheet" href="./css/style.css"/>
+  </head>
+  <body>
+    <section>
+      <div class="bannerVideo" id="slideShow">
+        <video
+          src="./img/molino.mp4"
+          autoplay
+          muted
+          loop class="active"
+        ></video>
+        <video src="./img/another.mp4" autoplay muted loop ></video>
+        <video src="./img/aventura.mp4" autoplay muted loop></video>
+        <video src="./img/salto.mp4" autoplay muted loop></video>
+      </div>
+      <div class="container">
+        <header id="navbar">
+          <a href="#" class="logo">About something</a>
+          <ul>
+            <li><a href="#" class="active">home</a></li>
+            <li><a href="#">Destination</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+          <span class="menuIcon" onclick="toggleMenu()"></span>
+        </header>
+        <div class="content">
+          <div class="bannerText" id="slideShowText">
+            <div class="active">
+              <h2>niebla</h2>
+              <p>
+                La niebla abraza el paisaje, creando una atmósfera misteriosa, donde el molino se erige como un faro del pasado. En este entorno suspendido entre lo tangible y lo intangible, cada giro del molino nos recuerda que, aunque el futuro sea incierto, la historia sigue moviéndose con fuerza.
+              </p>
+            </div>
+            <div>
+              <h2>Escrima</h2>
+              <p>
+                La precisión, la agilidad y la concentración definen al Escrima. Un arte marcial donde cada movimiento es una danza de estrategia y habilidad. Aquí, las espadas no solo cortan el aire, sino que también entrenan la mente. Un combate sin prisa, pero con una certeza: cada golpe cuenta.
+              </p>
+            </div>
+            <div>
+              <h2>Cielo</h2>
+              <p>
+                El aire se convierte en un aliado, el viento en un compañero de vuelo. Salir al vacío no es un desafío, es una oportunidad para sentir la libertad en su forma más pura. Volar en paracaídas no es solo una aventura, es un recordatorio de que, a veces, hay que dejarse llevar para descubrir la grandeza que nos rodea."
+              </p>
+            </div>
+            <div>
+              <h2>campo</h2>
+              <p>
+                En este vasto campo verde, la naturaleza se extiende sin fin, invitando a la reflexión y la calma. Cada hoja que se mueve al viento, cada paso que se da sobre la tierra, nos conecta con la esencia misma de la vida. Un espacio donde el silencio habla y el tiempo parece detenerse.
+              </p>
+            </div>
+          </div>
+        </div>
+        <ul class="controls">
+          <li onclick="prevSlide();prevSlideText();"><img src="./img/izquierda.png" /></li>
+          <li onclick="nextSlide();nextSlideText();"><img src="./img/Derecha.png" /></li>
+        </ul>
+      </div>
+    </section>
+    <script src="./script.js"></script>
+  </body>
+</html>
